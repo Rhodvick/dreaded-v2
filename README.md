@@ -40,7 +40,7 @@
 ## Pairing:
 
 
-- ***`Get your Session Id` by  [`PAIRING CODE HERE`](https://pair.dreaded.site). `or` [`HERE`](https://dreaded-v2.onrender.com).***
+- ***`Get your Session Id` by  [`PAIRING CODE HERE`](https://pair.dreaded.site). `or` [`HERE`](https://pair.dreaded.site).***
 
 
 
@@ -105,6 +105,11 @@ Thanks to...
 | [![Fortunatus Mokaya](https://github.com/Fortunatusmokaya.png?lenght=50width=50)](https://github.com/Fortunatusmokaya)|
 |----|
 * [`Fortunatus mokaya`](https://github.com/Fortunatusmokaya) ***Author, Owner***
+
+
+* [`Malik `](https://github.com/darkLo1rd) ***Debugging, random fixes and additions 🌱***
+
+
 
 * [`DikaArdnt`](https://github.com/DikaArdnt) ***For Hisoka Base***
 * [`Adiwajshing`](https://github.com/WhiskeySockets/Baileys) ***Baileys Library***

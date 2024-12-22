@@ -4,21 +4,26 @@ module.exports = async (context) => {
 const yts = require("yt-search");
 try {
 
-if (!text) return m.reply("What video do you want to download ?")
+if (!text) return m.reply("What song do you want to download ?")
 
-let search = await yts(text);
-        let link = search.all[0].url;
 
-        let data = await fetchJson (`https://api.dreaded.site/api/ytdl/video?url=${link}`)
+
+        let data = await fetchJson (`https://api.dreaded.site/api/ytdl/video?query=${text}`)
+
+let name = data.result.title;
+await m.reply(`_Downloading ${name}_`)
+
+
+
+
 await client.sendMessage(m.chat, {
-  video: {url: data.result.downloadLink},
-mimetype: "video/mp4",
- fileName: `${data.result.title}.mp4`}, { quoted: m });
-
+ video: {url: data.result.videoLink},
+mimetype: "video/mp4", caption: name,
+ fileName: name }, { quoted: m });
 await client.sendMessage(m.chat, {
- document: {url: data.result.downloadLink},
-mimetype: "video/mp4",
- fileName: `${search.all[0].title}.mp4` }, { quoted: m });
+ document: {url: data.result.videoLink},
+mimetype: "video/mp4", caption: name,
+ fileName: name }, { quoted: m });
 
 
 } catch (error) {
